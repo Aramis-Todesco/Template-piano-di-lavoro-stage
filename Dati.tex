@@ -21,18 +21,18 @@
 \newcommand{\telStudente}{+ 39 000 00 00 000}
 
 % Dati del Tutor Aziendale
-\newcommand{\nomeTutorAziendale}{nomeTutor}
-\newcommand{\cognomeTutorAziendale}{cognomeTutor}
-\newcommand{\emailTutorAziendale}{mail@mail.it}
-\newcommand{\telTutorAziendale}{+ 39 000 00 00 000}
-\newcommand{\ruoloTutorAziendale}{}
+\newcommand{\nomeTutorAziendale}{Aramis}
+\newcommand{\cognomeTutorAziendale}{Todesco}
+\newcommand{\emailTutorAziendale}{aramistodesco@etherealcodesrl.com}
+\newcommand{\telTutorAziendale}{+ 39 334 159 1594}
+\newcommand{\ruoloTutorAziendale}{Co-founder \& CTO}
 
 % Dati dell'Azienda
-\newcommand{\ragioneSocAzienda}{Azienda S.p.A}
-\newcommand{\indirizzoAzienda}{Via Roma 1, Roma (RM)}
-\newcommand{\sitoAzienda}{http://example.com/}
-\newcommand{\emailAzienda}{mail@mail.it}
-\newcommand{\partitaIVAAzienda}{P.IVA 12345678999}
+\newcommand{\ragioneSocAzienda}{Ethereal Code SRL}
+\newcommand{\indirizzoAzienda}{Via Gioacchino Rossini, San Zenone degli Ezzelini (TV)}
+\newcommand{\sitoAzienda}{https://www.etherealcodesrl.com}
+\newcommand{\emailAzienda}{info@etherealcodesrl.com}
+\newcommand{\partitaIVAAzienda}{P.IVA 05585020265}
 
 % Dati del Tutor Interno (Docente)
 \newcommand{\titoloTutorInterno}{Prof.}
@@ -40,65 +40,110 @@
 \newcommand{\cognomeTutorInterno}{CognomeDocente}
 
 \newcommand{\prospettoSettimanale}{
-     % Personalizzare indicando in lista, i vari task settimana per settimana
-     % sostituire a XX il totale ore della settimana
-    \begin{itemize}
-        \item \textbf{Prima Settimana (XX ore)}
-        \begin{itemize}
-            \item Incontro con persone coinvolte nel progetto per discutere i requisiti e le richieste
-            relativamente al sistema da sviluppare;
-            \item Verifica credenziali e strumenti di lavoro assegnati;
-            \item Presa visione dell’infrastruttura esistente;
-            \item Formazione sulle tecnologie adottate;
-        \end{itemize}
-        \item \textbf{Seconda Settimana - Sottotitolo (XX ore)} 
-        \begin{itemize}
-            \item ;
-        \end{itemize}
-        \item \textbf{Terza Settimana - Sottotitolo (XX ore)} 
-        \begin{itemize}
-            \item ;
-        \end{itemize}
-        \item \textbf{Quarta Settimana - Sottotitolo (XX ore)} 
-        \begin{itemize}
-            \item ;
-        \end{itemize}
-        \item \textbf{Quinta Settimana - Sottotitolo (XX ore)} 
-        \begin{itemize}
-            \item ;
-        \end{itemize}
-        \item \textbf{Sesta Settimana - Sottotitolo (XX ore)} 
-        \begin{itemize}
-            \item ;
-        \end{itemize}
-        \item \textbf{Settima Settimana - Sottotitolo (XX ore)} 
-        \begin{itemize}
-            \item ;
-        \end{itemize}
-        \item \textbf{Ottava Settimana - Conclusione (XX ore)} 
-        \begin{itemize}
-            \item ;
-        \end{itemize}
-    \end{itemize}
+Per ciascun argomento trattato, il tutor aziendale fornisce in via preliminare materiale di documentazione sui concetti di base, propedeutico alle attività pratiche della settimana.
+
+\begin{itemize}
+
+\item \textbf{Prima Settimana - Onboarding e Fondamenti (40 ore)}
+\begin{itemize}
+    \item Introduzione all'azienda, ai progetti e agli obiettivi del tirocinio;
+    \item Configurazione editor e Git, presa in carico dell'ambiente di sviluppo Docker (Engine 29) pre-configurato;
+    \item Ripasso JavaScript moderno (ES6+), asincronia, API;
+    \item Introduzione al paradigma MVC e architettura web;
+    \item Panoramica stack: Next.js 16, NestJS 11, PostgreSQL 18, Node.js 24 LTS;
+\end{itemize}
+
+\item \textbf{Seconda Settimana - Backend Base con NestJS (40 ore)}
+\begin{itemize}
+    \item Introduzione a NestJS 11 (controller, service, module);
+    \item Creazione API REST base;
+    \item Connessione a database PostgreSQL 18 (Supabase);
+    \item CRUD semplice su entità del gestionale interno;
+    \item Testing base delle API;
+\end{itemize}
+
+\item \textbf{Terza Settimana - Logica Applicativa e Auth (40 ore)}
+\begin{itemize}
+    \item Implementazione autenticazione JWT;
+    \item Gestione utenti e ruoli base;
+    \item Middleware, guard e validazioni;
+    \item Introduzione a Redis 8 per caching;
+\end{itemize}
+
+\item \textbf{Quarta Settimana - Frontend con Next.js (40 ore)}
+\begin{itemize}
+    \item Introduzione a Next.js 16 (routing, componenti, fetch dati);
+    \item Stilizzazione delle interfacce con Tailwind CSS 4;
+    \item Creazione interfaccia per il gestionale interno;
+    \item Integrazione frontend-backend tramite API;
+    \item Gestione stato e autenticazione lato client;
+    \item Introduzione a Vercel come piattaforma di deploy del frontend, con preview environments;
+\end{itemize}
+
+\item \textbf{Quinta Settimana - Introduzione SaaS e Multitenancy (40 ore)}
+\begin{itemize}
+    \item Concetti base di SaaS e architettura multitenant;
+    \item Strutturazione backend per gestione tenant;
+    \item Separazione dati e logica multi-cliente;
+    \item Estensione del progetto esistente;
+\end{itemize}
+
+\item \textbf{Sesta Settimana - Infrastruttura e Container (40 ore)}
+\begin{itemize}
+    \item Comprensione dell'ambiente Docker Engine 29 pre-configurato (compose, networking);
+    \item Introduzione a Kubernetes 1.36 nelle distribuzioni k3s e k8s tramite l'ambiente di produzione AWS pre-impostato;
+    \item Comprensione del flusso di deploy dei servizi backend su AWS e dei frontend su Vercel;
+    \item Utilizzo S3 per gestione file;
+\end{itemize}
+
+\item \textbf{Settima Settimana - Architetture Scalabili (40 ore)}
+\begin{itemize}
+    \item Introduzione a RabbitMQ 4 e code di messaggi;
+    \item Gestione processi asincroni;
+    \item API Gateway con Kong Gateway 3.10 LTS e concetti di microservizi;
+    \item Ottimizzazione performance e caching;
+\end{itemize}
+
+\item \textbf{Ottava Settimana - Consolidamento e Conclusione (40 ore)}
+\begin{itemize}
+    \item Revisione completa dei progetti sviluppati;
+    \item Debugging e miglioramenti;
+    \item Documentazione tecnica;
+    \item Presentazione finale del lavoro svolto;
+\end{itemize}
+
+\end{itemize}
 }
 
 % Indicare il totale complessivo (deve essere compreso tra le 300 e le 320 ore)
-\newcommand{\totaleOre}{}
+\newcommand{\totaleOre}{320}
 
 \newcommand{\obiettiviObbligatori}{
-	 \item \underline{\textit{O01}}: primo obiettivo;
-	 \item \underline{\textit{O02}}: secondo obiettivo;
-	 \item \underline{\textit{O03}}: terzo obiettivo;
-	 
+    \item \underline{\textit{O01}}: Comprendere le basi dello sviluppo web moderno lato backend utilizzando Node.js 24 LTS e NestJS 11;
+
+    \item \underline{\textit{O02}}: Sviluppare e testare API REST complete con operazioni CRUD integrate a database PostgreSQL 18 (Supabase);
+
+    \item \underline{\textit{O03}}: Implementare un sistema di autenticazione basato su JWT con gestione utenti e autorizzazioni di base;
+
+    \item \underline{\textit{O04}}: Realizzare una semplice interfaccia frontend con Next.js 16 e Tailwind CSS 4 integrata alle API sviluppate;
+
+    \item \underline{\textit{O05}}: Utilizzare l'ambiente Docker Engine 29 pre-configurato per l'esecuzione e la gestione dell'applicazione in sviluppo;
 }
 
 \newcommand{\obiettiviDesiderabili}{
-	 \item \underline{\textit{D01}}: primo obiettivo;
-	 \item \underline{\textit{D02}}: secondo obiettivo;
+    \item \underline{\textit{D01}}: Comprendere i concetti di architettura SaaS e multitenancy;
+
+    \item \underline{\textit{D02}}: Introdurre meccanismi di caching tramite Redis 8 per migliorare le performance;
+
+    \item \underline{\textit{D03}}: Acquisire familiarità con sistemi di messaggistica asincrona (RabbitMQ 4);
+
+    \item \underline{\textit{D04}}: Comprendere il ruolo di un API Gateway (Kong Gateway 3.10 LTS) in un'architettura a microservizi;
 }
 
 \newcommand{\obiettiviFacoltativi}{
-	 \item \underline{\textit{F01}}: primo obiettivo;
-	 \item \underline{\textit{F02}}: secondo obiettivo;
-	 \item \underline{\textit{F03}}: terzo obiettivo;
+    \item \underline{\textit{F01}}: Comprendere il flusso di deploy sull'infrastruttura cloud pre-configurata, con servizi backend su AWS e frontend su Vercel;
+
+    \item \underline{\textit{F02}}: Comprendere i concetti fondamentali di orchestrazione con Kubernetes 1.36 nelle distribuzioni k3s e k8s tramite l'ambiente di produzione pre-impostato;
+    
+    \item \underline{\textit{F03}}: Contribuire alla documentazione tecnica del progetto;
 }
